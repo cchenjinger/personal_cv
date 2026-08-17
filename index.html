@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陈静 · 关于我｜数据分析 / 产业研究 / 项目管理</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="torn" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.04" numOctaves="5" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="tapeTorn" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="3" seed="3" result="noise2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise2" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="主导航">
+  <a class="nav__link" id="nav-about"    href="index.html">关于我</a>
+  <a class="nav__link" id="nav-edu"      href="education.html">教育背景</a>
+  <a class="nav__link" id="nav-practice" href="practice.html">实践经历</a>
+  <a class="nav__link" id="nav-projects" href="projects.html">项目经历</a>
+  <a class="nav__link" id="nav-skills"   href="skills.html">技能特征</a>
+</nav>
+
+<main class="wrap">
+  <section class="hero">
+
+    <!-- 左侧：自我介绍 -->
+    <div class="hero__left">
+      <h1 class="hero__greet">
+        Hi，我是 <span class="accent">陈静</span>
+      </h1>
+
+      <div class="hero__sub">Research · Analysis · Project Management</div>
+
+      <div class="hero__desc">
+        <p>2026年硕士毕业于「重庆工商大学」「产业经济学」专业，研究方向为数字普惠金融与产业经济发展。<strong>兼具高效输入与稳定输出</strong>：耐心倾听、持续学习，独立统筹科研项目，熟练进行数据分析。</p>
+        <p>目前正在探索<strong>数据分析</strong>与<strong>产业研究分析</strong>方向的职业机会。</p>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--ghost" href="assets/个人简历.pdf" target="_blank" rel="noopener">查看简历</a>
+        <a class="btn btn--teal" href="mailto:cchen825@163.com">联系我</a>
+      </div>
+
+      <!-- 求职意向卡片 -->
+      <div class="paper matcher" data-rise="1">
+        <div class="matcher__title">求职意向</div>
+        <div class="matcher__desc">
+          <p><strong>当前状态：</strong>26届毕业生，正在进行求职探索</p>
+          <p><strong>职位方向：</strong>数据分析 · 产业研究分析</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 右侧：抠像人像（青色描边，无相框） -->
+    <div class="hero__figure">
+      <img src="assets/生活照_抠像_web.png" alt="陈静生活照" class="hero__portrait">
+    </div>
+
+  </section>
+
+  <!-- 荣誉奖励 -->
+  <section class="honors" style="max-width:1180px;margin:20px auto 0;">
+    <h2 class="section-title">荣誉奖励</h2>
+    <div class="section-sub">Honors &amp; Awards</div>
+    <div class="grid grid--3">
+      <div class="paper card honors-card tilt-b" data-rise="0">
+        
+        <h3>优秀毕业研究生</h3>
+        <p>2026年3月 · 校级</p>
+      </div>
+      <div class="paper card honors-card tilt-c" data-rise="1">
+        
+        <h3>学业一等奖学金</h3>
+        <p>2025年9月</p>
+      </div>
+      <div class="paper card honors-card tilt-d" data-rise="2">
+        
+        <h3>优秀研究生</h3>
+        <p>2024年10月 · 校级</p>
+      </div>
+      <div class="paper card honors-card tilt-a" data-rise="3">
+        
+        <h3>学业一等奖学金</h3>
+        <p>2024年9月</p>
+      </div>
+      <div class="paper card honors-card tilt-c" data-rise="4">
+        
+        <h3>优秀班干</h3>
+        <p>2023年6月 · 校级</p>
+      </div>
+      <div class="paper card honors-card tilt-b" data-rise="5">
+        
+        <h3>优秀毕业生</h3>
+        <p>2023年6月 · 校级</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="footer-line">陈静 · 数据分析 / 产业研究 / 项目管理</span>
+  <div>cchen825@163.com · 江西赣州</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
