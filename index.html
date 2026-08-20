@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陈静 · 关于我｜数据分析 / 产业研究 / 项目管理</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- MORNCOLOUR 风格云海 -->
+<!-- 远景云 -->
+<div class="cloud-far cloud-far--1" aria-hidden="true"></div>
+<div class="cloud-far cloud-far--2" aria-hidden="true"></div>
+<div class="cloud-far cloud-far--3" aria-hidden="true"></div>
+<!-- 中景云 -->
+<div class="cloud-mid cloud-mid--1" aria-hidden="true"></div>
+<div class="cloud-mid cloud-mid--2" aria-hidden="true"></div>
+<div class="cloud-mid cloud-mid--3" aria-hidden="true"></div>
+<!-- 前景云 -->
+<div class="cloud-near cloud-near--1" aria-hidden="true"></div>
+<div class="cloud-near cloud-near--2" aria-hidden="true"></div>
+<div class="cloud-near cloud-near--3" aria-hidden="true"></div>
+
+<svg class="svg-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="torn" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.04" numOctaves="5" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="tapeTorn" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="3" seed="3" result="noise2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise2" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- 滚动进度条 -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="nav" aria-label="主导航">
+  <a class="nav__logo" href="index.html">CJ</a>
+  <button class="nav__toggle" id="navToggle" aria-label="菜单" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__menu" id="navMenu">
+    <a class="nav__link" id="nav-about"    href="index.html">关于我</a>
+    <a class="nav__link" id="nav-edu"      href="education.html">教育背景</a>
+    <a class="nav__link" id="nav-practice" href="practice.html">实践经历</a>
+    <a class="nav__link" id="nav-projects" href="projects.html">项目经历</a>
+    <a class="nav__link" id="nav-skills"   href="skills.html">技能特征</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="hero">
+
+    <!-- 左侧：自我介绍 -->
+    <div class="hero__left">
+      <h1 class="hero__greet">
+        Hi，我是 <span class="accent">陈静</span>
+      </h1>
+
+      <div class="hero__sub"><span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span></div>
+
+      <div class="hero__tags">
+        <span class="tag tag--teal">数据分析</span>
+        <span class="tag tag--purple">产业研究</span>
+        <span class="tag tag--blue">Excel</span>
+        <span class="tag tag--tan">Python</span>
+        <span class="tag tag--lav">项目管理</span>
+      </div>
+
+      <div class="hero__desc">
+        <p>2026年硕士毕业于「重庆工商大学」「产业经济学」专业，研究方向为数字普惠金融与产业经济发展。<strong>兼具高效输入与稳定输出</strong>：耐心倾听、持续学习，独立统筹科研项目，熟练进行数据分析。</p>
+        <p>目前正在探索<strong>数据分析</strong>与<strong>产业研究分析</strong>方向的职业机会。</p>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--ghost" href="assets/个人简历.pdf" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          查看简历
+        </a>
+        <a class="btn btn--teal" href="mailto:cchen825@163.com">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          联系我
+        </a>
+      </div>
+
+      <!-- 求职意向卡片 -->
+      <div class="paper matcher" data-rise="1">
+        <div class="matcher__title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          求职意向
+        </div>
+        <div class="matcher__desc">
+          <p><strong>当前状态：</strong>26届毕业生，正在进行求职探索</p>
+          <p><strong>职位方向：</strong>数据分析 · 产业研究分析</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 右侧：抠像人像（青色描边，无相框） -->
+    <div class="hero__figure">
+      <div class="hero__glow"></div>
+      <img src="assets/生活照_抠像_web.png" alt="陈静生活照" class="hero__portrait">
+    </div>
+
+  </section>
+
+  <!-- 荣誉奖励 -->
+  <section class="honors" style="max-width:1180px;margin:20px auto 0;">
+    <h2 class="section-title">荣誉奖励</h2>
+    <div class="section-sub">Honors &amp; Awards</div>
+    <div class="grid grid--3">
+      <div class="paper card honors-card tilt-b" data-rise="0">
+        <div class="honors-card__icon">🎓</div>
+        <h3>优秀毕业研究生</h3>
+        <p>2026年3月 · 校级</p>
+      </div>
+      <div class="paper card honors-card tilt-c" data-rise="1">
+        <div class="honors-card__icon">🏆</div>
+        <h3>学业一等奖学金</h3>
+        <p>2025年9月</p>
+      </div>
+      <div class="paper card honors-card tilt-d" data-rise="2">
+        <div class="honors-card__icon">⭐</div>
+        <h3>优秀研究生</h3>
+        <p>2024年10月 · 校级</p>
+      </div>
+      <div class="paper card honors-card tilt-a" data-rise="3">
+        <div class="honors-card__icon">🎯</div>
+        <h3>学业一等奖学金</h3>
+        <p>2024年9月</p>
+      </div>
+      <div class="paper card honors-card tilt-c" data-rise="4">
+        <div class="honors-card__icon">🤝</div>
+        <h3>优秀班干</h3>
+        <p>2023年6月 · 校级</p>
+      </div>
+      <div class="paper card honors-card tilt-b" data-rise="5">
+        <div class="honors-card__icon">🌟</div>
+        <h3>优秀毕业生</h3>
+        <p>2023年6月 · 校级</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__social">
+    <a href="mailto:cchen825@163.com" class="footer__icon" title="邮箱">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+    <a href="https://github.com/cchenjinger" class="footer__icon" title="GitHub" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+  </div>
+  <span class="footer-line">陈静 · 数据分析 / 产业研究 / 项目管理</span>
+  <div>cchen825@163.com · 江西赣州</div>
+</footer>
+
+<!-- 返回顶部按钮 -->
+<button class="back-to-top" id="backToTop" aria-label="返回顶部">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
